@@ -27,4 +27,4 @@ Hashing Time: 27400 ns
 
 --- MD5 Hashing ---
 Hashed Data: 8d318895eb17781487fec388a6b5bdec
-Hashing Time: 3091900 ns
+Hashing Time: 3091900 ns.
