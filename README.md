@@ -1,30 +1,85 @@
-# Comparative_Analysis_of_Crptographic_Algos
+🔐 Cryptographic Algorithms Comparison
+📘 Description
+This Java project demonstrates and compares the performance of different cryptographic techniques, including:
 
-# RESULTS
+Symmetric Encryption using AES and DES
 
+Asymmetric Encryption using RSA
 
+Hashing using SHA-256 and MD5
+
+Each algorithm is measured in terms of encryption/decryption speed or hashing time, using System.nanoTime() for nanosecond-level precision.
+
+⚙️ Features
+AES Encryption/Decryption
+
+DES Encryption/Decryption
+
+RSA KeyPair-based Asymmetric Encryption/Decryption
+
+SHA-256 Hashing
+
+MD5 Hashing
+
+Execution time measurement for performance comparison
+
+🧪 Sample Input
+The input string used for all operations is:
+
+arduino
+Copy
+Edit
+"Hello, Cryptography!"
+📦 Output (Sample)
+sql
+Copy
+Edit
 --- AES Encryption/Decryption ---
-Encrypted Data: IqpTjXZHEitMQYQpJCU9rc46GWYzBmeHJqSFmFMRvTY=
-Encryption Time: 1186200 ns
+Encrypted Data: sqs6TxZ3...
+Encryption Time: 123456 ns
 Decrypted Data: Hello, Cryptography!
-Decryption Time: 114300 ns
+Decryption Time: 789012 ns
 
 --- DES Encryption/Decryption ---
-Encrypted Data: uLZ24PEIwZB1Wqaf0ZbXK0BCp1EFiT8L
-Encryption Time: 1342500 ns
-Decrypted Data: Hello, Cryptography!
-Decryption Time: 236300 ns
+...
 
 --- RSA Encryption/Decryption ---
-Encrypted Data: VtG1+iObJg28CPsTdFx/TBKBSU/+oAp7+Rx03tAbUuPO1y+Pz+nKwllNUUr5hE/p5L5jJMZ0CCQbUmdbC3Q967Wpl4+gBvZKqS5ZU6Ak+28qQd7d8uTzkDtvnMk+Pk9yc+Wi3kKwNnE/dLn1CuEgZSuO4Q3BxKUR3yOmTUvGjo3AyqhB4qB41yExqgkY8IYFnyCZ+cS1EXqFcQ6lFQy4s7sUzBLRCsesxQRQslmN0YkQO8XhY3gIYHGo02ubuDtWU1R1izrMOLyGypI9/1RM9MDIA0wX9zZso+neA3eFnM0QREobel02sZUygSzgTMqZ767JmOKrpXeLtHJq33/N/Yhs0SFC/8kLrZIvHoBW+q7ZyIzUlHLY5tvXNeoXB3q6lWfccXI2fgzjMKRg0uSvnAedsBB5z8CoW3rbDc7vlMToaRReFLX01yqSLA7hKOFgkJpgQWAv4T4CkMVDcACXcPJMUbM5jq4zFHtbJnH2xL1KkwpjgNR8X6OAkZSkbaWO
-Encryption Time: 14522900 ns
-Decrypted Data: Hello, Cryptography!
-Decryption Time: 101782000 ns
+...
 
 --- SHA-256 Hashing ---
-Hashed Data: 29aff889935f5a275ec562ef46c138e917a270aab79b4d5577ee8ea5af308f73
-Hashing Time: 27400 ns
+Hashed Data: a592a1c5...
+Hashing Time: 65432 ns
 
 --- MD5 Hashing ---
-Hashed Data: 8d318895eb17781487fec388a6b5bdec
-Hashing Time: 3091900 ns.
+...
+🚀 How to Run
+1. Compile the Program
+Make sure you have JDK installed (Java 8 or higher):
+
+bash
+Copy
+Edit
+javac CryptographicComparison.java
+2. Run the Program
+bash
+Copy
+Edit
+java Cryptographic_Algorithms.CryptographicComparison
+📁 Project Structure
+Copy
+Edit
+Cryptographic_Algorithms/
+├── CryptographicComparison.java
+🧠 Concepts Demonstrated
+Algorithm	Type	Strengths	Weaknesses
+AES	Symmetric	Fast, Secure, Widely used	Key distribution problem
+DES	Symmetric	Historical relevance	Weak (56-bit key), not recommended
+RSA	Asymmetric	Secure key exchange	Slower, CPU intensive
+SHA-256	Hashing	Secure, widely used for integrity	Not reversible
+MD5	Hashing	Fast, legacy	Vulnerable to collisions
+
+📚 Dependencies
+Java Cryptography Extension (JCE)
+
+No external libraries used — purely Java SE
+
